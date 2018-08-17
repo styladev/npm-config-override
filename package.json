@@ -1,5 +1,5 @@
 {
-  "name": "@styla/npm-config-override",
+  "name": "@styla/config-override",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
