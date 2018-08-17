@@ -1,0 +1,21 @@
+{
+  "name": "@styla/npm-config-override",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/styladev/npm-config-override.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/styladev/npm-config-override/issues"
+  },
+  "homepage": "https://github.com/styladev/npm-config-override#readme"
+}
