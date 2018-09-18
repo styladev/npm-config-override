@@ -1,5 +1,3 @@
-"use strict";
-exports.__esModule = true;
 var Override = /** @class */ (function () {
     function Override(overrideNamespace) {
         this._overrideNamespace = overrideNamespace;
@@ -44,8 +42,19 @@ var Override = /** @class */ (function () {
             void 0;
         }
     };
+    Override.prototype.delete = function (overrideName) {
+        if (!('sessionStorage' in window))
+            return;
+        console.assert(overrideName !== null && overrideName !== undefined, 'Override name is mandatory');
+        try {
+            sessionStorage.removeItem(this._overrideNamespace + "_override_" + overrideName);
+        }
+        catch (err) {
+            void 0;
+        }
+    };
     return Override;
 }());
-exports.Override = Override;
+export { Override };
 ;
 //# sourceMappingURL=index.js.map

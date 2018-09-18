@@ -63,4 +63,21 @@ export class Override {
             void 0;
         }
     }
+
+    delete ( overrideName: string ): void
+    {
+        if ( !( 'sessionStorage' in window ) )
+            return;
+
+        console.assert( overrideName !== null && overrideName !== undefined, 'Override name is mandatory' );
+
+        try
+        {
+            sessionStorage.removeItem( `${this._overrideNamespace}_override_${overrideName}` );
+        }
+        catch ( err )
+        {
+            void 0;
+        }
+    }
 };
