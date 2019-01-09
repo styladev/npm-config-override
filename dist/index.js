@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var Override = /** @class */ (function () {
     function Override(overrideNamespace) {
         this._overrideNamespace = overrideNamespace;
@@ -55,6 +57,6 @@ var Override = /** @class */ (function () {
     };
     return Override;
 }());
-export { Override };
+exports.Override = Override;
 ;
 //# sourceMappingURL=index.js.map
