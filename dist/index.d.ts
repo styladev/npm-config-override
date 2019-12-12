@@ -9,6 +9,6 @@ export declare class Override {
      */
     getAll(): object;
     get<T>(overrideName: string): T;
-    delete(overrideName: string): void;
     set<T>(overrideName: string, overrideValue: T): void;
+    delete(overrideName: string): void;
 }

@@ -31,7 +31,11 @@ var Override = /** @class */ (function () {
         return overrides;
     };
     Override.prototype.get = function (overrideName) {
-        return this.getAll()[overrideName];
+        try {
+            return JSON.parse(sessionStorage[this._overrideNamespace + "_override_" + overrideName]);
+        }
+        catch (_a) { }
+        return void 0;
     };
     Override.prototype.set = function (overrideName, overrideValue) {
         if (!('sessionStorage' in window))
